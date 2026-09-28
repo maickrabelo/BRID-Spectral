@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-[#0a0a0f] text-white antialiased overflow-x-hidden selection:bg-blue-500/30 selection:text-white;
+    min-height: 100vh;
+  }
+
+  /* Prevent iOS zoom on input focus while maintaining style */
+  input[type="text"],
+  input[type="email"],
+  textarea,
+  select {
+    font-size: 16px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0f; 
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12); 
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.25); 
+}
+
+@layer utilities {
+  .container-base {
+    max-width: 1240px;
+    padding-inline: 1rem;
+    margin-inline: auto;
+  }
+  @media (min-width: 640px) {
+    .container-base {
+      padding-inline: 1.5rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    .container-base {
+      padding-inline: 2rem;
+    }
+  }
+
+  .container-legal {
+    max-width: 800px;
+    margin-inline: auto;
+  }
+
+  .touch-scroll {
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+}

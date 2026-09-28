@@ -1,0 +1,6 @@
+{
+  "name": "BRID Spectral Technologies",
+  "description": "BRID Spectral Technologies develops proprietary computational methods for discovering, predicting and engineering complex physical systems. Hamburg, Germany.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
